@@ -1,0 +1,55 @@
+/*Estilos de presentación*/
+#FondoBienvenda{
+    background-image:url(./IMAGEN/CentraL/imagenCentral.png) ;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+/*Estilos card generales*/
+.cardGenerales   {
+border: none;
+background-color: transparent;
+padding: 1em;
+margin: none;
+color: white;/*texto*/
+
+
+
+} 
+
+
+
+/*Media query adaptacion a pantallas*/
+@media screen and (min-width:480px)and (max-width:940px){
+.cardGenerales{
+    color: black;
+}
+}
+
+@media screen and (min-width:941px)and (max-width:1300px){
+#FondoBienvenida{
+    height: 100%;
+}
+#contenedorBienvenida{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;/*cambia de orientacion la imagen haccia la izquierda*/
+
+}
+.contenedorTexto{
+    margin:4rem;
+}
+}
+
+
+@media screen and (min-width:1301px){
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;/*cambia de orientacion la imagen haccia la izquierda*/
+    }
+    .contenedorTexto{
+        margin: 4rem;
+    }
+}
+
